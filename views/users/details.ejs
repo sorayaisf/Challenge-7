@@ -1,0 +1,43 @@
+<%- include("../partials/header.ejs") %>
+</head>
+
+<body>
+
+    <%- include("../partials/nav.ejs") %>
+
+    <div class="container" style="margin-top: 100px;">
+
+        <h1 class="mb-4">Hi, <strong><%= biodata.firstName %></strong> </h1>
+        <div class="card" style="width: 40rem;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-3">
+                        <h5 class="card-title mb-4">Username : </h5>
+                        <h5 class="card-title mb-3">Email :</h5>
+                        <h5 class="card-title mb-3">First Name :</h5>
+                        <h5 class="card-title mb-3">Last Name : </h5>
+                        <h5 class="card-title mb-3">Nationality : </h5>
+                        <h5 class="card-title mb-3">Hobby : </h5>
+
+
+
+                    </div>
+                    <div class="col">
+                        <h5 class="card-title mb-3"><%= user.username %></h5>
+                        <h5 class="card-title mb-3"><%= user.email %></h5>
+                        <h5 class="card-title mb-3"><%= biodata.firstName %></h5>
+                        <h5 class="card-title mb-3"><%= biodata.lastName %></h5>
+                        <h5 class="card-title mb-3"><%= biodata.nationality %></h5>
+                        <h5 class="card-title mb-3"><%= biodata.hobby %></h5>
+
+
+                    </div>
+                </div>
+                <a href="/api/v1/admin/dashboard/edit/<%= user.id %>" class="btn btn-primary">Edit Data</a>
+                <a href="/api/v1/admin/dashboard/delete/<%= user.id %>" class="btn btn-danger">Delete User</a>
+                <a href="/api/v1/admin/game/score/<%= user.id %>" class="btn btn-warning">Game History</a>
+                <a href="/api/v1/admin/dashboard" class="btn btn-success d-block mt-4">Back to Dashboard</a>
+            </div>
+        </div>
+    </div>
+    <%- include("../partials/footer.ejs") %>

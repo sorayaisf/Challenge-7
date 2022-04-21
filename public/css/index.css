@@ -1,0 +1,302 @@
+/* body {
+    background-color: black;
+} */
+
+
+
+.btn-warning {
+    font-size: 16px !important;
+    font-style: "Open Sans";
+}
+
+@media (min-width: 992px) {
+    .jumbotron2 {
+        height: 100vh;
+    }
+
+    .jumbotron3 {
+        height: 100vh;
+    }
+
+    .jumbotron4 {
+        height: 100vh;
+    }
+
+    .top-scores {
+        height: 100vh;
+    }
+}
+
+/* slide 1 */
+
+.jumbotron1 {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+    overflow: hidden;
+    background: url("/img/main-bg.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+}
+
+.jumbotron1 .btn-warning:hover {
+    background: none;
+    border-color: #eee;
+    color: #eee;
+}
+
+.navbar-brand {
+    font-family: "Open Sans";
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 200px !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    color: #fff !important;
+    font-weight: bold;
+    font-family: "Open Sans";
+}
+
+.nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid black;
+    margin-bottom: -3px;
+}
+
+.about-me {
+    margin-right: 250px !important;
+}
+
+.judul-utama {
+    font-size: 80px;
+    font-family: "Bebas Neue";
+    text-transform: uppercase;
+
+}
+
+.sub-judul {
+    font-size: 24px;
+    font-family: "Bebas Neue";
+    font-weight: bold;
+}
+
+.ToggleButton {
+    margin: auto;
+    margin-top: 70px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* slide2 */
+.jumbotron2 {
+    background: url("/img/the-games-bg.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.carousel-indicators li {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+    border-radius: 50% !important;
+    background: none !important;
+    border: 2px solid #fff !important;
+}
+
+.carousel-indicators li.active {
+    background: #fff !important;
+}
+
+/* slide 3 */
+
+.jumbotron3 {
+    background: url("/img/features.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.features-content {
+    margin: 400px 0;
+    color: #fff;
+}
+
+.timeline {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-title {
+    color: orange;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* GARIS */
+.timeline:first-child:before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: -20px;
+    height: 114%;
+    width: 2px;
+    background-color: #fff;
+}
+
+/* LINGKARAN */
+.timeline-title::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -26px;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    border: 2px solid #fff;
+}
+
+.timeline:first-child .timeline-title::before {
+    background-color: #fff;
+}
+
+/* slide 4 */
+.jumbotron4 {
+    background-image: url("/img/requirements.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    color: #fff;
+}
+
+.title-require {
+    padding-bottom: 10%;
+}
+
+/* slide 5 */
+
+.top-scores {
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/img/top-score.png') fixed center center;
+    background-size: cover;
+    padding: 0;
+    padding-top: 110px;
+    height: auto;
+}
+
+.jumbotron5 .top-scores {
+    margin: 100px 0 20px 0;
+}
+
+.top-scores .btn-warning {
+    width: 260px;
+    height: 60px;
+    margin-top: 40px;
+    border-radius: 4px;
+    background: #ffb548;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.top-scores .btn-warning:hover {
+    background: none;
+    border-color: #eee;
+    color: #eee;
+}
+
+.top-scores .frame-avatar {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.top-scores h2 {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: #ddd;
+}
+
+.top-scores h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: orange;
+}
+
+.top-scores h5 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #444444;
+}
+
+.top-scores h6 {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    color: #444444 !important;
+}
+
+.top-scores .card {
+    background-color: rgba(255, 255, 255, 0.08);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.top-scores img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.top-scores p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.top-scores .logo-twitter {
+    color: #444444;
+}
+
+
+.card-header img {
+    width: 40px;
+    border: 3px solid orange;
+    margin: 50px 0 50px 0 50px;
+}
+
+.name {
+    font-size: 15px;
+    color: orange;
+}
+
+.profesi {
+    font-size: 15px;
+}
+
+.card-title {
+    font-size: 15px;
+}
+
+.card-text {
+    font-size: 10px;
+    color: grey;
+}

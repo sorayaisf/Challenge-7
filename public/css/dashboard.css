@@ -1,0 +1,32 @@
+h1 {
+    margin-top: 100px;
+}
+
+.navbar-brand {
+    font-family: "Open Sans";
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 200px !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    color: #fff !important;
+    font-weight: bold;
+    font-family: "Open Sans";
+}
+
+.nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid black;
+    margin-bottom: -3px;
+}
+
+.about-me {
+    margin-right: 250px !important;
+}
